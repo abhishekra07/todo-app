@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 100px 200px;
+  background-color: #FFD0D0;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 50px;
+  color: #A87676;
+  padding: 30px;
+  text-align: center;
+}
+
+.sub-container {
+  padding: 50px 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  padding: 10px;
+  color: black;
+}
+
+.search {
+  width: 85%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 30px;
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  outline: none;
+  font-size: 15px;
+}
+
+.btn {
+  margin-left: 20px;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #A87676;
+  color: aliceblue;
+  transition: box-shadow 0.3s;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.checkbox + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #100f0f;
+  border-radius: 4px;
+}
+
+.checkbox:checked + label:before {
+  background-color: #0a8e08;
+  border-color: #0a8e08;
+}
+
+.checkbox:checked + label:after {
+  content: '\2713'; /* Unicode checkmark character */
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+.checkbox + label:hover:before {
+  border-color: #666;
+}
+
+.checkbox:checked + label:hover:before {
+  background-color: #0a8e08;
+  border-color: #0a8e08;
+}
+
+.list-container {
+  padding-top: 20px;
+}
+
+.delete-btn {
+  margin-left: 40px;
+  color: red;
+  cursor: pointer;
+}
